@@ -23,10 +23,14 @@
     <h1>Hello Im CJ bro!</h1>
     <p>Agaragan bitch</p>
     <script>
-      var n1 = window.prompt('Digite um número: ')
-      var n2 = window.prompt('Digite outro número: ')
+      var n1 = Number(window.prompt('Digite um número: ')) // Number.parseFloat número com ou sem . / Number.parseInt número iteiro
+      var n2 = Number(window.prompt('Digite outro número: ')) // Usar Number já realiza as 2 acões, as outras sendo necessárias para casos especificos
       var s = n1 + n2
-      window.alert('A soma dos valores é ' + s) // Concatenação
+      //window.alert('A soma dos valores é ' + s) // Concatenação
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Usando template string
+      // (number + number) para Adição
+      // (string + string) para Concatenação 
+
     </script>
 </body>
 </html>
