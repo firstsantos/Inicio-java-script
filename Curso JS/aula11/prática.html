@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páis</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+        }
+
+        body, h1 {
+            color: white;
+            margin: 20px
+        }
+        
+        #res {
+            padding: 20px;
+        }
+</style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    De onde você é?<input type="text" name="txtpai" id="txtpai">
+    <input type="button" value="Verificar" onclick="Calcular()">
+    <div id="res"></div>
+    <script>
+
+        function Calcular() {
+            var txtpa = document.querySelector('input#txtpai')
+            var res = document.querySelector('div#res')
+            var pai = txtpa.value
+            if (pai == 'Brasil')
+            res.innerHTML += `<p> Você nasceu em <strong>${pai}</strong> portanto você é:</p>`
+            if (pai == 'Brasil'){
+                res.innerHTML = `<p> Você é <strong>Brasileiro</strong>!</p>`
+            } else {
+                res.innerHTML = `Você é Estrangeiro, fora!`
+            }
+
+
+
+        }
+    </script>
+</body>
+</html>
