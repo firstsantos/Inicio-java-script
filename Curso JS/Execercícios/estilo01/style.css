@@ -14,15 +14,38 @@ header {
 
 section {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     border-radius: 10px;
-    padding: 25px;
+    padding: 20px;
     margin: auto;
     background-color: white;
     width: 500px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
 }
 
+section > div > p > input.inp {
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.ano, p {
+    padding: 10px;
+}
+
+div.ano, p > input.butao {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 7px;
+    transition: 0.8s;
+}
+
+div.ano, p > input.butao:hover {
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
 
 footer {
     color: white;
