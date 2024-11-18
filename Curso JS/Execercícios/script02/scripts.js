@@ -24,4 +24,6 @@ function carregar() {
 
   carregar();
 
-  setInterval(carregar, 1000);
+  setInterval(carregar, 600);
+
+  
