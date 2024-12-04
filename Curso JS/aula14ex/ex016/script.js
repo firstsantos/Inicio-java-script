@@ -11,16 +11,22 @@ function contar() {
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passos.value)
+        if(p <= 0) {
+            window.alert('Passo inválido! Considerando PASSO 1')
+            p = 1
+        }
         if (i < f) {
-            //CONTAGEM CRESCENTE
+            // CONTAGEM CRESCENTE
             for(let c = i; c <= f; c += p) {
                 res.innerHTML += `${c} \u{27A1} `
             }
         } else {
-            //CONTAGEM REGRESSIVA
+            // CONTAGEM REGRESSIVA
             for(let c = i; c >= f; c -= p) {
-                res.innerHTML += `${c} \u{27A1}`
+                res.innerHTML += `${c} \u{27A1} `
             }
         }
+        res.innerHTML = res.innerHTML.slice(0, -2); // Remove a última seta
+
     }
 }
