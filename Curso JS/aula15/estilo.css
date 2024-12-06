@@ -1,14 +1,13 @@
 body {
-    background-color: rgba(15, 105, 223, 0.726);
+    background: rgb(168, 168, 168);
 }
-
 header {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
 section {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -16,11 +15,46 @@ section {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
 }
 
+section div {
+ text-align: center;
+}
+
+section div input#txtn {
+    color: rgb(0, 0, 0);
+    border-radius:10px ;
+    border: none;
+    padding: 3px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+}
+
+input.cod {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius:10px ;
+    border: none;
+    padding: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+}
+
+section div.On {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+select#seltab {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+
+}
+
 
 
 footer {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-style: italic;
     padding: 10px;
 }
