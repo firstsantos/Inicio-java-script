@@ -14,6 +14,7 @@ function btn_click() {
     if (pedido.readyState == 4 && pedido.status == 200) {
       document.getElementById("caixa").innerHTML = this.responseText;
     }
+    //document.getElementById("caixa").innerHTML = "Tente mais tarde.";
   };
   //prepara o pedido
   pedido.open("GET", "dados.txt", true);
