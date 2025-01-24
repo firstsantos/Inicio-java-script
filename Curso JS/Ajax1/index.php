@@ -4,7 +4,7 @@
     if(isset($_GET['n']) and isset($_GET['a']) ){
         $nome = $_GET['n'];
         $apelido = $_GET['a'];
-        $frase_final= "seja bem-vindo ao servidor, Sr('a'). $nome $apelido";
+        $frase_final= "Sr('a'). $nome $apelido";
     }
 
 ?>
